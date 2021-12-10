@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="contact">
+			<div id="logo"><a href="#"><img src="img/ebookstore.png" title="UTHM e-bookstore" alt="UTHM e-bookstore" class="img-responsive" /></a></div>
+		</div>
+		<nav>
+			<h2>Categories</h2>
+			<ul>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="contact.html">Register</a></li>
+				
+				
+			</ul>
+		</nav>
+	</header>
+	<div id="account-register">
+		<div id="content">
+			<h1>Register Account</h1>
+			<form>
+				<fieldset id="account">
+					<legend ><b>Your Personal Details</b></legend>
+					<div class="form-group required">
+						<label class="control-label" for="input-firstname">First Name</label>
+						<div >
+							<input type="text" name="firstname" value="" placeholder="First Name" id="input-firstname" class="form-control" />
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-lastname">Last Name</label>
+						<div class="my-2">
+							<input type="text" name="lastname" value="" placeholder="Last Name" class="form-control" id="input-lastname"/>
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-email">E-Mail</label>
+						<div class="my-2">
+							<input type="email" name="email" value="" placeholder="E-Mail" class="form-control" id="input-email"/>
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label" for="input-telephone">Telephone</label>
+						<div class="my-2">
+							<input type="tel" name="telephone" value="" placeholder="Telephone" class="form-control" id="input-telephone" />
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="account">
+					<legend ><b>Your Password</b></legend>
+					<div class="form-group required">
+						<label class="control-label " for="input-password">Password</label>
+						<div class="my-2">
+							<input type="password" name="password" value="" placeholder="Password" class="form-control" id="input-password"/>
+						</div>
+					</div>
+					<div class="form-group required">
+						<label class="control-label " for="input-confirm">Password Confirm</label>
+						<div class="my-2">
+							<input type="password" name="confirm" value="" placeholder="Password Confirm" class="form-control" id="input-confirm" />
+						</div>
+					</div>
+				</fieldset>
+				<fieldset id="account">
+					<legend ><b>Newsletter</b></legend>
+					<div class="form-group">
+						<div class=" check-box">
+							<label><b>Subscribe:</b></label>
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="1" />
+								Yes
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="newsletter" value="0" checked="checked" />
+							No</label>
+						</div>
+					</div>
+				</fieldset>
+				<div class="buttons" style="padding-left: 60px; padding-top: 10px; font-size: 18px;">
+					
+					<br>
+					<button class="btn" id="btn1" onclick="sub">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+
+	btn1.addEventListener('click', sub = () =>{
+		
+		alert('The form is successful submited');
+	})
+	cont.addEventListener('click', wel = () => {
+		alert('wellcome to register form')
+	})
+</script>
+</body>
+</html>
